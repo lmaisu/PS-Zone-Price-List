@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Price List PS-Zone</title>
+    <style>
+        body {
+            font-family: 'Agrandir Grand';
+            background-color: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0px;
+            text-align: center;
+        }
+        h1 {
+            color: #ffb800;
+            font-size: 48px;
+            margin-bottom: 40px;
+        }
+        .container {
+            width: 1080px;
+            height: 1920px;
+            background-color: #000000;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .ticket {
+            position: relative;
+            background-color: #333333;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 0 auto 30px;
+            width: 40%;
+        }
+        .ticket::before,
+        .ticket::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 62px;
+            background-color: #000000;
+            border-radius: 25px;
+        }
+        .ticket::before {
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .ticket::after {
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .section-title {
+            color: #ff914d;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section-title.standard {
+            color: #5ce1e6;
+        }
+        .price {
+            font-size: 28px;
+            margin: 15px 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        .price .old-price {
+            text-decoration: ;
+            color: red;
+            display: inline-block;
+            position: relative;
+        }
+        .price .old-price::after {
+            content: '';
+            position: absolute;
+            top: 45%;
+            left: 0;
+            right: 0;
+            height: 1.8px;
+            background-color: red;
+            transform: rotate(-30deg);
+            transform-origin: center;
+        }
+        .price .new-price {
+            color: #ffffff;
+        }
+        .controllers {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .controllers img {
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+        }
+        .special-offer {
+            color: #ffb800;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PRICE LIST PS-ZONE</h1>
+        <div class="ticket">
+            <div class="section-title">VIP ROOMS</div>
+            <div class="price">
+                1 hour <span class="new-price">25₾</span>
+            </div>
+            <div class="price">
+                2 hours <span class="new-price">45₾</span> <span class="old-price">50₾</span>
+            </div>
+            <div class="price">
+                3 hours <span class="new-price">60₾</span> <span class="old-price">75₾</span>
+            </div>
+        </div>
+        <div class="ticket">
+            <div class="section-title standard">STANDARD PS5</div>
+            <div class="price">
+                1 hour <span class="new-price">8₾</span>
+            </div>
+            <div class="price">
+                2 hours <span class="new-price">12₾</span>
+            </div>
+            <div class="controllers">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/ps-controller.png" alt="controller">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/ps-controller.png" alt="controller">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/ps-controller.png" alt="controller">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/ps-controller.png" alt="controller">
+            </div>
+        </div>
+        <div class="special-offer">
+            Special Offer: 2 Hours of Gaming = Get 2 FREE Slushies
+        </div>
+    </div>
+</body>
+</html>
